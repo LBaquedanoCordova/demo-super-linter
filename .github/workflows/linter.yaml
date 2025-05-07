@@ -5,7 +5,7 @@ on: # yamllint disable-line rule:truthy
   push: null
   pull_request: null
 
-permissions: {}
+permissions: { }
 
 jobs:
   build:
@@ -31,4 +31,4 @@ jobs:
         env:
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_ALL_CODEBASE: true   # 👈 Esta línea hace que revise TODOS los archivos
+          VALIDATE_ALL_CODEBASE: true
